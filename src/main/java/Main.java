@@ -24,6 +24,7 @@ public class Main {
                 printRemainingAttempts(remainingAttempts);
             } else {
                 System.out.println("You guessed it!");
+                scan.close();
                 break;
             }
 
@@ -33,6 +34,7 @@ public class Main {
                 System.out.println("Sorry, you didn't guess the number. The answer was: " + numberToGuess);
             }
         }
+        scan.close();
     }
 
     public static void printRemainingAttempts(int remainingAttempts) {
